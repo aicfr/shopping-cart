@@ -59,11 +59,45 @@ Editer le fichier `checkout.html` et ajouter le code nécessaire à la création
 * `required`
 * `POST`
 
+##### Exemple
+
+![form](form.png)
+
 ### Validation des données
+
+Editer le fichier `checkout.html` et ajouter le bloc ci-dessous après la balise `</form>`.
+
+Dans cette partie nous souhaitons :
+
+* Récupérer les valeurs saisies dans les champs `email` et `password`
+* Puis valider que le couple `email` / `password` existe bien (Ex : foo@foo.com / sa)
+
+```
+<script>
+    var email = // Get email value ;
+    var password = // Get password value ;
+
+    var login = function () {
+    // Verify login / password
+    };
+
+    email.addEventListener('change', login, false);
+    password.addEventListener('change', login, false);
+
+    var form = document.getElementById('loginForm');
+    form.addEventListener('submit', function () {
+        login();
+        if (!this.checkValidity()) {
+            event.preventDefault();
+        }
+    }, false);
+</script>
+```
 
 ##### Les mots clés
 
 * `getElementById(...)`
 * `setCustomValidity(...)`
+* `if` et `else`
 * `value`
 * `&&`
