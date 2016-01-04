@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discdog</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body>
+
+<div id="site">
+    <header id="masthead">
+        <h1></h1>
+    </header>
+    <div id="content">
+        <div id="products">
+            <ul>
+                <li>
+                    <div class="product-image">
+                        <img src="images/radiohead.png" alt=""/>
+                    </div>
+                    <div class="product-description" data-name="Radiohead" data-price="5">
+                        <h3 class="product-name">Radiohead</h3>
+
+                        <p class="product-price">&euro; 5</p>
+
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-1">Quantity</label>
+                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1"/>
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn"/></p>
+                        </form>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-image">
+                        <img src="images/muse.jpg" alt=""/>
+                    </div>
+                    <div class="product-description" data-name="Muse" data-price="8">
+                        <h3 class="product-name">Muse</h3>
+
+                        <p class="product-price">&euro; 8</p>
+
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-2">Quantity</label>
+                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1"/>
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn"/></p>
+                        </form>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-image">
+                        <img src="images/royal_blood.jpg" alt=""/>
+                    </div>
+                    <div class="product-description" data-name="Royal Blood" data-price="11">
+                        <h3 class="product-name">Royal Blood</h3>
+
+                        <p class="product-price">&euro; 11</p>
+
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-3">Quantity</label>
+                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1"/>
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn"/></p>
+                        </form>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>	

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paylib - Se connecter</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body>
+<div id="top">
+<span style="color: #fafafa">Discdog
+<script>document.write(sessionStorage.getItem('discdog-total'))</script> EUR
+</span>
+</div>
+<div id="paylib">
+    <img src="images/logo_paylib.png">
+</div>
+
+<!--Code du formulaire de login-->
+<div id="login">
+    <form id="loginForm" name="loginForm" method="post" action="choose.html">
+        <label>Email</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+        <label>Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <label>
+            <input type="checkbox" id="rememberMe" name="rememberMe">Remember me
+        </label>
+
+        <br/><br/>
+
+        <input type="submit" value="Validate"/>
+    </form>
+
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+
+        var login = function () {
+            if (email.value == 'foo@foo.com' && password.value == 'sa') {
+                email.setCustomValidity('');
+            } else {
+                email.setCustomValidity('Username and/or Password Invalid');
+            }
+        };
+
+        email.addEventListener('change', login, false);
+        password.addEventListener('change', login, false);
+
+        var form = document.getElementById('loginForm');
+        form.addEventListener('submit', function () {
+            login();
+            if (!this.checkValidity()) {
+                event.preventDefault();
+            }
+        }, false);
+    </script>
+</div>
+</body>
+</html>	
