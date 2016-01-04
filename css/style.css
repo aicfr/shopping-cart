@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display: block
 }
 
@@ -36,11 +36,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     font-size: large;
 }
 
-#login {
+#content_discdog {
     position: fixed;
     top: 250px;
     margin-left: 500px;
-    width: 300px;
+    width: 360px;
     padding: 10px;
 }
 
@@ -408,8 +408,6 @@ body#checkout-page #site-info {
 .shopping-cart tr:nth-child(even) {
     background: #fafafa;
 }
-
-,
 
 .shopping-cart td.pdelete {
     text-align: center;

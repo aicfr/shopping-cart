@@ -5,7 +5,7 @@
 
 # Architecture du projet
 
-![shipping_cart_architecture](shipping_cart_architecture.png)
+![shipping_cart_architecture](images/doc/shipping_cart_architecture.png)
 
 * __Navigateur__ : Permet de consulter et d'afficher le rendu du projet (Ex : Chrome, Firefox, Internet Explorer, ...)
     * _Navigateur à utiliser : Chrome_
@@ -16,7 +16,7 @@
 
 # Flow du paiement
 
-
+![flow_shipping_cart](images/doc/flow_shipping_cart.png)
 
 # Mise en place de l'environnement
 ## Récupération du projet sous Github
@@ -44,7 +44,7 @@ nginx.exe -s stop
 
 Tester l'application : <http://localhost>
 
-![discdog](discdog.png)
+![discdog](images/doc/discdog.png)
 
 # Développement
 ## Formulaire de "login"
@@ -68,7 +68,7 @@ Editer le fichier `checkout.html` et ajouter le code nécessaire à la création
 
 ##### Exemple
 
-![form](form.png)
+![form](images/doc/form.png)
 
 ### Validation des données
 
