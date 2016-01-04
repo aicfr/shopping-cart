@@ -1,4 +1,7 @@
 # Architecture du projet
+
+![shipping_cart_architecture](shipping_cart_architecture.png)
+
 # Flow du paiement
 # Développement
 ## Récupération du projet sous Github
@@ -22,3 +25,10 @@ Editer le fichier `checkout.html` et ajouter le code nécessaire à la création
 * `POST`
 
 ### Validation des données
+
+##### Les mots clés
+
+* `getElementById(...)`
+* `setCustomValidity(...)`
+* `value`
+* `&&`
