@@ -8,7 +8,7 @@
 * __Serveur Web__ : Permet de servir des requêtes respectant le protocole HTTP (Ex : [Apache HTTP](https://httpd.apache.org/), [NGINX](http://nginx.org), [Node.js](https://nodejs.org), ...)
     * _Serveur à utiliser : NGINX_
 * __Base de données__ : Permet de stocker et de partager des données (Ex : MySQL, Oracle Database, MariaDB, ...)
-    * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)
+    * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)_
 
 # Flow du paiement
 # Mise en place de l'environnement
