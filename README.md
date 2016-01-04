@@ -1,3 +1,4 @@
+# But
 # Architecture du projet
 
 ![shipping_cart_architecture](shipping_cart_architecture.png)
@@ -7,11 +8,38 @@
 * __Serveur Web__ : Permet de servir des requêtes respectant le protocole HTTP (Ex : [Apache HTTP](https://httpd.apache.org/), [NGINX](http://nginx.org), [Node.js](https://nodejs.org), ...)
     * _Serveur à utiliser : NGINX_
 * __Base de données__ : Permet de stocker et de partager des données (Ex : MySQL, Oracle Database, MariaDB, ...)
-    * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)_
+    * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)
 
 # Flow du paiement
-# Développement
+# Mise en place de l'environnement
 ## Récupération du projet sous Github
+
+```
+git clone https://github.com/aicfr/shopping-cart.git c:/web/html
+```
+
+## Configuration de NGINX
+
+```
+nginx.exe
+nginx.exe -s stop
+```
+
+```
+location / {
+    root   c:/web/html;
+    index  index.html index.htm;
+    error_page 405 = $uri;
+}
+```
+
+Tester l'application : <http://localhost>
+
+![discdog](discdog.png)
+
+Documentation : <http://nginx.org/en/docs/windows.html>
+
+# Développement
 ## Fomulaire de "login"
 ### Spécifications du formulaire
 
