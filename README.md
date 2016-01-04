@@ -14,10 +14,6 @@
 * __Base de données__ : Permet de stocker et de partager des données (Ex : [MySQL](https://www.mysql.fr), [Oracle Database](http://www.oracle.com/fr/database/overview/index.html), [MariaDB](https://mariadb.org), ...)
     * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)_
 
-# Flow du paiement
-
-![flow_shipping_cart](images/doc/flow_shipping_cart.png)
-
 # Mise en place de l'environnement
 ## Récupération du projet sous Github
 
