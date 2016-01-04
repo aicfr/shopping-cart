@@ -2,6 +2,13 @@
 
 ![shipping_cart_architecture](shipping_cart_architecture.png)
 
+* __Navigateur__ : Permet de consulter et d'afficher le rendu du projet (Ex : Chrome, Firefox, Internet Explorer, ...)
+    * _Navigateur à utiliser : Chrome_
+* __Serveur Web__ : Permet de servir des requêtes respectant le protocole HTTP (Ex : [Apache HTTP](https://httpd.apache.org/), [NGINX](http://nginx.org), [Node.js](https://nodejs.org), ...)
+    * _Serveur à utiliser : NGINX_
+* __Base de données__ : Permet de stocker et de partager des données (Ex : MySQL, Oracle Database, MariaDB, ...)
+    * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)_
+
 # Flow du paiement
 # Développement
 ## Récupération du projet sous Github
