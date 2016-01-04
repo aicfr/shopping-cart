@@ -1,4 +1,8 @@
 # But
+
+* Développer un formulaire de connexion avec 3 champs (`email`, `password` et `remember me`) en HTML5
+* Vérifier les données saisies en JavaScript 
+
 # Architecture du projet
 
 ![shipping_cart_architecture](shipping_cart_architecture.png)
@@ -7,10 +11,13 @@
     * _Navigateur à utiliser : Chrome_
 * __Serveur Web__ : Permet de servir des requêtes respectant le protocole HTTP (Ex : [Apache HTTP](https://httpd.apache.org/), [NGINX](http://nginx.org), [Node.js](https://nodejs.org), ...)
     * _Serveur à utiliser : NGINX_
-* __Base de données__ : Permet de stocker et de partager des données (Ex : MySQL, Oracle Database, MariaDB, ...)
+* __Base de données__ : Permet de stocker et de partager des données (Ex : [MySQL](https://www.mysql.fr), [Oracle Database](http://www.oracle.com/fr/database/overview/index.html), [MariaDB](https://mariadb.org), ...)
     * _Base de données utilisée pour conserver le panier : [Window.sessionStorage](https://developer.mozilla.org/fr/docs/Web/API/Window/sessionStorage)_
 
 # Flow du paiement
+
+
+
 # Mise en place de l'environnement
 ## Récupération du projet sous Github
 
@@ -18,29 +25,29 @@
 git clone https://github.com/aicfr/shopping-cart.git c:/web/html
 ```
 
-## Configuration de NGINX
+## Test de l'application
+### Lancement de NGINX
 
 ```
+cmd.exe
+
+cd c:\opt\nginx
+
+# Start
 nginx.exe
+
+# Stop (Dans une autre fenêtre de cmd.exe)
 nginx.exe -s stop
 ```
 
-```
-location / {
-    root   c:/web/html;
-    index  index.html index.htm;
-    error_page 405 = $uri;
-}
-```
+### Lancement de l'application
 
 Tester l'application : <http://localhost>
 
 ![discdog](discdog.png)
 
-Documentation : <http://nginx.org/en/docs/windows.html>
-
 # Développement
-## Fomulaire de "login"
+## Formulaire de "login"
 ### Spécifications du formulaire
 
 Editer le fichier `checkout.html` et ajouter le code nécessaire à la création d'un formulaire de type "login". Celui-ci devra comporter les éléments suivant :
