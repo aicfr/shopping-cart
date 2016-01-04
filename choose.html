@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.shop.js"></script>
     <title>Valider l'achat</title>
 </head>
@@ -23,7 +24,23 @@
     <div style="text-align: center;">
         <h1>Mode de paiement</h1>
         <img src="images/creditcard-proc.png">
-        <a href="#" class="btn">Validate</a>
+        <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Validate</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Paiement OK</p>
+
+                <p>Votre règlement a bien été pris en compte, et nous vous en remercions.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="index.html" class="btn btn-warning" role="button">Discdog</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>
