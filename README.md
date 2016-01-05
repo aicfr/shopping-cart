@@ -17,22 +17,43 @@
 # Mise en place de l'environnement
 ## Récupération du projet sous Github
 
+Git est un VCS (Version Control System). Cela permet à un groupe de développeurs (travaillant sur un même projet) de stocker toute évolution du code source.
+
+* Double-cliquer sur `git.bat` (fichier présent sur le bureau Windows)
+* Puis copié/collé la commande ci-dessous :
+
 ```
 git clone https://github.com/aicfr/shopping-cart.git c:/web/html
+```
+
+### Résultat de la commande
+
+```
+c:\>git clone https://github.com/aicfr/shopping-cart.git c:/web/html
+Cloning into 'c:/web/html'...
+remote: Counting objects: 63, done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 63 (delta 27), reused 47 (delta 11), pack-reused 0
+Unpacking objects: 100% (63/63), done.
+Checking connectivity... done.
+
+c:\>
 ```
 
 ## Test de l'application
 ### Lancement de NGINX
 
+* Double-cliquer sur `nginx.bat` (fichier présent sur le bureau Windows)
+* Puis copié/collé la commande ci-dessous :
+
 ```
-cmd.exe
-
-cd c:\opt\nginx
-
-# Start
 nginx.exe
+```
 
-# Stop (Dans une autre fenêtre de cmd.exe)
+* Si vous désirez stopper le serveur, double-cliquer sur `nginx.bat` (fichier présent sur le bureau Windows)
+* Puis copié/collé la commande ci-dessous :
+
+```
 nginx.exe -s stop
 ```
 
