@@ -125,3 +125,26 @@ Dans cette partie nous souhaitons :
 * `if` et `else`
 * `value`
 * `&&`
+
+# Configuration de NGINX
+
+```
+location / {
+    root   c:/web/html;
+    index  index.html index.htm;
+   error_page 405 = $uri;
+}
+```
+
+# Fichier `bat`
+## `git.bat`
+
+```
+cmd /K "cd c:\"
+```
+
+## `nginx.bat`
+
+```
+cmd /K "cd c:\opt\nginx"
+```
