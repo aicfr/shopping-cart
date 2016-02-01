@@ -126,7 +126,13 @@ Dans cette partie nous souhaitons :
 * `value`
 * `&&`
 
-# Configuration de NGINX
+# Installation et Configuration de NGINX
+
+Télécharger <http://nginx.org/download/nginx-1.9.10.zip>
+
+Puis dézipper le fichier dans `C:\opt\nginx`
+
+## Modifier le fichier `C:\opt\nginx\conf\nginx.conf`
 
 ```
 location / {
